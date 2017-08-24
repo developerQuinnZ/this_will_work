@@ -1,14 +1,3 @@
+WARN: unable to delete all pyc files until you install pugnlp.
 [
-{
-  "model": "labeler.image",
-  "pk": 2,
-  "fields": {
-    "caption": null,
-    "taken_date": null,
-    "updated_date": "2017-08-01T00:00:00.000Z",
-    "created_date": "2017-08-01T00:00:00.000Z",
-    "uploaded_by": null,
-    "file": "images/uid_0/3.png"
-  }
-},
 ]
