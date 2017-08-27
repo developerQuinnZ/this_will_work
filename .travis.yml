@@ -38,7 +38,7 @@ after_success:
   - codecov  # THIS WILL UPLOAD COVERAGE REPORT TO codecov.io
 =======
   - codecov
->>>>>>> 42957f3ac6b43778611f2dbb56d894d13173e9ba
+>>>>>>> 7ba4320e-350e-487e-b109-4868e6b2f7f4
   - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
 cache:
   - apt
