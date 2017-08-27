@@ -9,4 +9,4 @@ gunicorn
 # pandas
 # scipy
 # pugnlp==0.0.9
-# git+https://github.com/totalgood/pugnlp.git@master#egg=pugnlp
+
