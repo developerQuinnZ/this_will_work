@@ -11,7 +11,7 @@ env:
     # - DISTRIB="ubuntu" PYTHON_VERSION="2.7" COVERAGE="true"
     # - DISTRIB="conda" PYTHON_VERSION="2.7" COVERAGE="false"
     # - DISTRIB="conda" PYTHON_VERSION="3.3" COVERAGE="false"
-    - DISTRIB="conda" PYTHON_VERSION="3.5" COVERAGE="false"
+    # - DISTRIB="conda" PYTHON_VERSION="3.5" COVERAGE="false"
     - DISTRIB="ubuntu" PYTHON_VERSION="3.5" COVERAGE="false"
 addons:
   apt:
@@ -19,15 +19,18 @@ addons:
       - git
       - python-pip
 install:
-  - source tests/travis_install.sh
+  # - source tests/travis_install.sh
   - pip install --upgrade pip
   - pip install -r requirements.txt
+  - pip install -r test-requirements.txt    # THIS INSTALL CODECOV, etc.
 before_script:
-  - git config --global user.email "you@example.com"
-  - git config --global user.name "Your Name"
+  - git config --global user.email "travis.github@totalgood.com"
+  - git config --global user.name "Travis Testing for Total Good civicu_app"
 script:
+  - python manage.py test
   - python setup.py test
 after_success:
+  - codecov  # THIS WILL UPLOAD COVERAGE REPORT TO codecov.io
   - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
 cache:
   - apt

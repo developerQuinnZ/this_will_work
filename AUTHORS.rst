@@ -2,4 +2,4 @@
 Developers
 ==========
 
-* Hobson Lane <github@totalgood.com>
+* Quinn Zepeda <developerquinnz@gmail.com>
