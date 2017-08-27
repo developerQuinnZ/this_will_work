@@ -4,8 +4,8 @@
 import pytest
 from labeler_site.bot import recognize_greeting
 
-__author__ = "Hobson Lane"
-__copyright__ = "Hobson Lane"
+__author__ = "Quinn Zepeda"
+__copyright__ = "Quinn Zepeda"
 __license__ = "mit"
 
 
