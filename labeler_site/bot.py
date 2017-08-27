@@ -8,9 +8,9 @@ To install this bot run `python setup.py install` which will install the command
 A typical interaction with this bot would be:
 
 $ bot Hi
-Hi Quinn, how are you?
+Hi quinn, how are you?
 $ bot Hey
-Hi Quinn, how are you?
+Hi quinn, how are you?
 $ bot Inspire me!
 Failure is part of the process. Each time you fail you are one step closer to success.
 
@@ -75,7 +75,7 @@ def is_greeting(statement):
     Returns:
       bool: True if statement is a greeting. False otherwise.
 
-    >>> is_greeting('hi')
+    >>> recognize_greeting('hi')
     True
     """
     statement = statement.lower()

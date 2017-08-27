@@ -23,7 +23,6 @@ install:
   - pip install --upgrade pip
   - pip install -r requirements.txt
   - pip install -r test-requirements.txt
-
 before_script:
   - git config --global user.email "developerquinnz@gmail.com"
   - git config --global user.name "Travis Testing for civicu_app"
@@ -31,7 +30,7 @@ script:
   - python manage.py test
   - python setup.py test
 after_success:
-  - codecov  # THIS WILL UPLOAD COVERAGE REPORT TO codecov.io
+  - codecov
   - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
 cache:
   - apt
