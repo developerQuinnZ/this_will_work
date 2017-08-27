@@ -28,8 +28,8 @@ install:
   - pip install -r test-requirements.txt
 >>>>>>> 42957f3ac6b43778611f2dbb56d894d13173e9ba
 before_script:
-  - git config --global user.email "travis.github@totalgood.com"
-  - git config --global user.name "Travis Testing for Total Good civicu_app"
+  - git config --global user.email "developerquinnz@gmail.com"
+  - git config --global user.name "Travis Testing for civicu_app"
 script:
   - python manage.py test
   - python setup.py test
@@ -38,7 +38,7 @@ after_success:
   - codecov  # THIS WILL UPLOAD COVERAGE REPORT TO codecov.io
 =======
   - codecov
->>>>>>> 42957f3ac6b43778611f2dbb56d894d13173e9ba
+>>>>>>> 7ba4320e-350e-487e-b109-4868e6b2f7f4
   - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
 cache:
   - apt
