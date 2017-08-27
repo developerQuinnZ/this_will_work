@@ -22,7 +22,11 @@ install:
   # - source tests/travis_install.sh
   - pip install --upgrade pip
   - pip install -r requirements.txt
+<<<<<<< HEAD
   - pip install -r test-requirements.txt    # THIS INSTALL CODECOV, etc.
+=======
+  - pip install -r test-requirements.txt
+>>>>>>> 42957f3ac6b43778611f2dbb56d894d13173e9ba
 before_script:
   - git config --global user.email "travis.github@totalgood.com"
   - git config --global user.name "Travis Testing for Total Good civicu_app"
@@ -30,7 +34,11 @@ script:
   - python manage.py test
   - python setup.py test
 after_success:
+<<<<<<< HEAD
   - codecov  # THIS WILL UPLOAD COVERAGE REPORT TO codecov.io
+=======
+  - codecov
+>>>>>>> 42957f3ac6b43778611f2dbb56d894d13173e9ba
   - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
 cache:
   - apt
