@@ -8,9 +8,9 @@ To install this bot run `python setup.py install` which will install the command
 A typical interaction with this bot would be:
 
 $ bot Hi
-Hi hobs, how are you?
+Hi quinn, how are you?
 $ bot Hey
-Hi hobs, how are you?
+Hi quinn, how are you?
 $ bot Inspire me!
 Failure is part of the process. Each time you fail you are one step closer to success.
 
@@ -26,8 +26,8 @@ import requests
 
 from labeler_site import __version__  # noqa
 
-__author__ = "Hobson Lane"
-__copyright__ = "Hobson Lane"
+__author__ = "Quinn Zepeda"
+__copyright__ = "Quinn Zepeda"
 __license__ = "mit"
 
 _logger = logging.getLogger(__name__)
