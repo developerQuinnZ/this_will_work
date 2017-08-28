@@ -25,7 +25,8 @@ SECRET_KEY = 'g--m2luoixmkuf5r2p-qtrs-fp9zsog-oj^5tis59fa!fdu=kk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '.ngrok.io', '.totalgood.org', '.totalgood.com']
+ALLOWED_HOSTS = ['localhost', '.ngrok.io', '.totalgood.org', '.totalgood.com',
+ 'stark-depths-65052.herokuapp.com']
 
 
 INSTALLED_APPS = [
