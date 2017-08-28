@@ -5,6 +5,7 @@ doctest2==0.1
 gunicorn
 requests
 jsonfield
+ngrok-client
 # pillow
 # tensorflow
 # keras
