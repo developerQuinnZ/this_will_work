@@ -12,6 +12,7 @@ References:
 from django.db import models
 
 from django.contrib.auth.models import User
+import jsonfield
 
 
 # FIXME: Unused but don't comment it out because migrations use it
@@ -35,7 +36,7 @@ class Image(models.Model):
     created_date = models.DateTimeField('Date photo was uploaded.', auto_now_add=True)
     uploaded_by = models.ForeignKey(User, default=None, null=True)  # , required=False)
     file = models.FileField("Image to be labeled", upload_to='images')
-
+    info = jsonfield.JSONField("Meta data about the image, usually from the EXIF Header", null=True)
 
 class UserLabel(models.Model):
     """ Individual user labels (a filled out ballot that "votes" for a label associated with an image) """

@@ -5,7 +5,7 @@ doctest2==0.1
 gunicorn
 requests
 jsonfield
-ngrok-client
+#ngrok-client
 # pillow
 # tensorflow
 # keras
@@ -13,4 +13,3 @@ ngrok-client
 # scipy
 # pugnlp==0.0.9
 # git+https://github.com/totalgood/pugnlp.git@master#egg=pugnlp
-
