@@ -1,1 +1,1 @@
-web: gunicorn labeler:app
+web: gunicorn labeler_site.wsgi
