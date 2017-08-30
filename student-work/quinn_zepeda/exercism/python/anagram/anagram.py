@@ -2,7 +2,7 @@ def detect_anagrams(string, array):
     lst = []
 
     for word in array:
-        if word == string:
+        if word.lower() == string.lower():
             continue
         if len(string) != len(word):
             continue
@@ -10,8 +10,8 @@ def detect_anagrams(string, array):
             if letter not in string:
                 continue
 
-        s = set(string)
-        w = set(word)
-        if len(w) == len(s):
+        s = sorted(string.lower())
+        w = sorted(word.lower())
+        if s == w:
             lst.append(word)
     return lst
